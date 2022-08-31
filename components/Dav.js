@@ -9,7 +9,7 @@ export function Dav(props) {
   const { nodes, materials } = useGLTF("/3D BAURFE---para despliegue.gltf");
   return (
     <group {...props} dispose={null}>
-      <group position={[0, 0, -0.01]}>
+      
         <mesh
           castShadow
           receiveShadow
@@ -28,7 +28,7 @@ export function Dav(props) {
           geometry={nodes["TQ_ARD-geom_2"].geometry}
           material={materials.TQ_ARD_edge}
         />
-      </group>
+     
     </group>
   );
 }
